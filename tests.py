@@ -4,6 +4,7 @@ from main import BooksCollector
 # обязательно указывать префикс Test
 class TestBooksCollector:
 
+## proba
     # пример теста:
     # обязательно указывать префикс test_
     # дальше идет название метода, который тестируем add_new_book_
@@ -21,4 +22,4 @@ class TestBooksCollector:
         assert len(collector.get_books_rating()) == 2
 
     # напиши свои тесты ниже
-    # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
+
