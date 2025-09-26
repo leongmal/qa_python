@@ -41,11 +41,12 @@ class TestBooksCollector:
         assert collector.get_book_genre('Туманность Андромеды') == 'Фантастика'
 
     def test_get_books_with_specific_genre_valid(self, collector, add_book_new):
-        add_book_new('Афоня', 'Комедии')
+        add_book_new('Челюсти', 'Ужасы')
         add_book_new('Киндза-дза', 'Комедии')
+        add_book_new('Туманность Андромеды', 'Фантастика')
 
         result = collector.get_books_with_specific_genre('Комедии')
-        assert result == ['Афоня', 'Киндза-дза']
+        assert result == ['Киндза-дза']
 
     def test_get_books_with_specific_genre_invalid(self, collector):
         result = collector.get_books_with_specific_genre('Фэнтези')
