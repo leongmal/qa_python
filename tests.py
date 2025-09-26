@@ -59,7 +59,6 @@ class TestBooksCollector:
 
         result = collector.get_books_for_children()
         assert result == ['Незнайка', 'Буратино']
-        assert 'Челюсти' not in result
 
     def test_get_books_for_children_all_restricted(self, collector, add_book_new):
         add_book_new('Челюсти', 'Ужасы')
