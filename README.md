@@ -4,9 +4,7 @@
 созданы тесты:
 
 Инициализация класса:
-        
-    test_books_genre_type_dict -  проверка типов атрибутов
-    test_favorites_type_list  -  проверка типов атрибутов
+
     test_books_genre_empty_dict -  проверка начальных значений
     test_favorites_type_list  -  проверка начальных значений
     test_genre_everyone  - проверка наличия всех жаноров

@@ -3,17 +3,9 @@ import pytest
 
 class TestBooksCollector:
 
-    def test_books_genre_type_dict(self):
-        collector = BooksCollector()
-        assert type(collector.books_genre) == dict
-
     def test_books_genre_empty_dict(self):
         collector = BooksCollector()
         assert collector.books_genre == {}
-
-    def test_favorites_type_list(self):
-        collector = BooksCollector()
-        assert type(collector.favorites) == list
 
     def test_favorites_empty_list(self):
         collector = BooksCollector()
@@ -46,6 +38,7 @@ class TestBooksCollector:
         collector.add_new_book('Солярис')
         collector.set_book_genre('Солярис', 'Фантастика')
         assert collector.books_genre['Солярис'] == 'Фантастика'
+
     def test_set_book_genre_invalid_book(self):
         collector = BooksCollector()
         collector.set_book_genre('Солярис', 'Фантастика')
@@ -94,6 +87,7 @@ class TestBooksCollector:
 
         result = collector.get_books_for_children()
         assert result == []
+        
     def test_add_book_in_favorites(self):
         collector = BooksCollector()
         collector.add_new_book('Война и мир')
