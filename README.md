@@ -18,6 +18,7 @@
     test_set_book_genre_valid - установка корректного жанра
     test_set_book_genre_invalid_book - проверка несуществующей книги
     test_get_book_genre_valid - получение жанра
+    test_get_books_genre_dict - выводит текущий словарь books_ganre 
 
 Фильтр по жанрам
     test_get_books_with_specific_genre_valid - выбор книг по жанру

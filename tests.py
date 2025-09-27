@@ -41,6 +41,11 @@ class TestBooksCollector:
         collector.set_book_genre('Туманность Андромеды', 'Фантастика')
         assert collector.get_book_genre('Туманность Андромеды') == 'Фантастика'
 
+    def test_get_books_genre_dict(self, collector):
+        collector.add_new_book('Туманность Андромеды')
+        collector.set_book_genre('Туманность Андромеды', 'Фантастика')
+        assert collector.get_books_genre() == {'Туманность Андромеды':'Фантастика'}
+
     def test_get_books_with_specific_genre_valid(self, collector):
         collector.add_new_book('Челюсти')
         collector.add_new_book('Киндза-дза')
